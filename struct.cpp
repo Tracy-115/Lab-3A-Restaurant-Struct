@@ -39,9 +39,11 @@ void showRestaurant(const Restaurant& a){
 }
 
 int main(){
-
-    Restaurant a = newRestaurant();
-    showRestaurant(a);
-
+    Restaurant a.1 = newRestaurant();
+    showRestaurant(a.2);
+    Restaurant a.3 = newRestaurant();
+    showRestaurant(a.3);
+    Restaurant a.4 = newRestaurant();
+    showRestaurant(a.4);
     return 0;
 }
