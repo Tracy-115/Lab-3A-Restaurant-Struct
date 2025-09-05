@@ -29,19 +29,19 @@ Restaurant newRestaurant(){
     return temp;
 }
 
-void showRestaurant(const Restaurant& r){
+void showRestaurant(const Restaurant& a){
     cout << "------------Your order------------" << endl;
-    cout << "Name for order: " << r.name << endl;
-    cout << "Your cuisine: " << r.menu << endl;
-    cout << "Number of dishes: " << r.quantity << endl;
-    cout << "Number of Dine-In: "<< r.numPeople << endl;
-    cout << "Thank you for your rating: " << r.ratings << endl;
+    cout << "Name for order: " << a.name << endl;
+    cout << "Your cuisine: " << a.menu << endl;
+    cout << "Number of dishes: " << a.quantity << endl;
+    cout << "Number of Dine-In: "<< a.numPeople << endl;
+    cout << "Thank you for your rating: " << a.ratings << endl;
 }
 
 int main(){
 
-    Restaurant r1 = newRestaurant();
-    showRestaurant(r1);
+    Restaurant a = newRestaurant();
+    showRestaurant(a);
 
     return 0;
 }
