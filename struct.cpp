@@ -1,7 +1,11 @@
+// COMSC-210 | Lab 3A | Kyawt Thinzar Min
+// IDE used: VScode, Terminal 
+
 #include <iostream>
 #include <string>
 using namespace std;
 
+//defining struct
 struct Restaurant{
     int numPeople;
     string menu;
@@ -10,6 +14,11 @@ struct Restaurant{
     int quantity;
 };
 
+//headers
+Restaurant newRestaurant();
+void showRestaurant(const Restaurant &);
+
+//function definitions
 Restaurant newRestaurant(){
     Restaurant temp;
     cout << "Enter the name for this order ";
@@ -39,11 +48,11 @@ void showRestaurant(const Restaurant& a){
 }
 
 int main(){
-    Restaurant a.1 = newRestaurant();
-    showRestaurant(a.2);
-    Restaurant a.3 = newRestaurant();
-    showRestaurant(a.3);
-    Restaurant a.4 = newRestaurant();
-    showRestaurant(a.4);
+    Restaurant a1 = newRestaurant();
+    showRestaurant(a1);
+    Restaurant a3 = newRestaurant();
+    showRestaurant(a3);
+    Restaurant a4 = newRestaurant();
+    showRestaurant(a4);
     return 0;
 }
